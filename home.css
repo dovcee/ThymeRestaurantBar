@@ -1,0 +1,186 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/*----------------Top Banner & Nav--------------------*/
+body {
+  font-family: copperplate;
+  color: darkslategrey;
+  padding: 0px;
+  background-image: url(cover2.jpg);
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+}
+
+/* Logo*/
+.header {
+  padding: 30px;
+  text-align: center;
+  color: darkolivegreen;
+  border-radius: 4px;
+  background-image: url(bi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.name h1 {
+  font-size: 75px;
+  text-align: center;
+  font-family: copperplate, fantasy;
+  color: rgb(139, 108, 67);
+  background-color: antiquewhite;
+  border: 9px double rgb(83, 125, 75);
+  width: 400px;
+  float: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(83, 125, 75);
+  position: relative;
+  border-radius: 4px;
+  width: 100%;
+
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  margin-left: 30px;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: copperplate, fantasy;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(201, 193, 180);
+  color: darkolivegreen;
+}
+
+/*----------------Content--------------------*/
+
+
+
+
+
+/* Float four columns side by side */
+.column {
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 50px;
+}
+
+
+/* Style the content container */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: blanchedalmond;
+}
+
+.card img {
+  border-radius: 120px;
+}
+
+.button {
+
+  background-color: rgb(131, 131, 71);
+  width: 170px;
+  border-radius: 10px;
+  height: 50px;
+  color: antiquewhite;
+  padding-top: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+}
+
+
+
+
+/*------------Footer------------------------*/
+
+.site-footer {
+  background-color: rgb(83, 125, 75);
+  font-family: copperplate;
+  max-block-size: 85px;
+  margin: 0px 0px 10px 0px;
+  /*space on top*/
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+.site-footer ul li {
+  display: inline;
+  /*makes links horizontal*/
+}
+
+.icon-style {
+  max-width: 30px;
+  max-height: 30px;
+  opacity: .6;
+  border-radius: 5px;
+}
+
+.address,
+.social {
+  text-align: center;
+  float: none;
+  margin-top: 1px;
+  padding-top: 10px;
+  display: inline;
+  color: antiquewhite;
+  z-index: 1;
+}
+
+/*------------------------------------*/
+/* Responsive layout - when the screen is less than 800px wide*/
+@media screen and (max-width: 800px) {
+  .menu {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide*/
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  body {
+    width: 100%;
+    display: table;
+  }
+}

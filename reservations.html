@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cassandra Dover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thyme Restaurant & Bar</title>
+    <link href="reservations.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+
+</head>
+
+<body>
+    <!--Nav Bar & Banner-->
+    <div class="header">
+        <div class="name">
+            <h1>Thyme</h1>
+        </div>
+    </div>
+    <!--Navigation-->
+    <nav class="topnav">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="aboutme.html">About Us</a>
+        <a href="reservations.html">Book a Table</a>
+    </nav>
+
+    <!--Conent-->
+    <div class="content">
+        <div class="img">
+            <img src="shrimp-tails.jpg" alt="Pepper Shrimp Cocktails">
+        </div>
+        <div class="box">
+            <form>
+                <fieldset>
+                    <legend>Book a Table</legend>
+                    <label for="name">Name:</label><br><br>
+                    <input type="text" id="name" name="name"><br><br>
+        
+                    <label for="email">Email:</label><br><br>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="phone">Phone Number:&nbsp;&nbsp;</label><br><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+        
+                    <label for="ppl">Party Size:&nbsp;&nbsp;</label>
+                    <select id="ppl" name="ppl">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select><br><br>
+                    
+                    <label for="date">When?</label>&nbsp;&nbsp;
+                    <input type="datetime-local" id="date" value="2022-10-30T20:00"><br><br>
+                    
+                    <p>Prefer Contact:&nbsp;&nbsp;(Choose all that apply)</p><br>
+                    <input type="checkbox" id="text" name="contact1" value="TextMessage">
+                    <label for="text">Text&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+                    <input type="checkbox" id="tel" name="contact2" value="Phone">
+                    <label for="tel">Phone&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+                    <input type="checkbox" id="e-mail" name="contact3" value="TextMessage">
+                    <label for="e-mail">Email</label><br><br>
+
+                    <p>Special Request</p><br>
+                    <input  type="text" placeholder="Allergies \ Special requirements" required name="Message"><br><br>
+
+                    <input type="submit" value="Submit"> 
+                    
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="site-footer">
+        <div class="address">
+            <ul>
+                <li>803 West 53<sup>st</sup> Street New York, NY 11029</li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul>
+                <li>Keep in Touch with Us</li>
+                <li><a href="www.twitter.com"><img src="twittericon.png" class="icon-style" alt="twitter icon"></a></li>
+                <li><a href="www.twitter.com"><img src="faceicon.png" class="icon-style" alt="Facebook icon"></a></li>
+                <li><a href="www.twitter.com"><img src="instaicon.png" class="icon-style" alt="Instagram icon"></a></li>
+                <li><a href="tel:2123080922"><img src="phone.png" class="icon-style" alt="phone icon"></a></li>
+                <li><a href="mailto:thyme&thyme@gmail.com"><img src="emailicon.png" class="icon-style"
+                            alt="twitter icon"></a></li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

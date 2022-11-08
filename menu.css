@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    background-color: antiquewhite;
+}
+
+/* Logo*/
+.header {
+    padding: 30px;
+    text-align: center;
+    color: darkolivegreen;
+    border-radius: 4px;
+    background-image: url(bi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.name h1 {
+    font-size: 75px;
+    text-align: center;
+    font-family: copperplate, fantasy;
+    color: rgb(139, 108, 67);
+    background-color: antiquewhite;
+    border: 9px double rgb(83, 125, 75);
+    width: 400px;
+    float: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(83, 125, 75);
+    position: relative;
+    border-radius: 4px;
+    width: 100%;
+
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    margin-left: 30px;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: copperplate, fantasy;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(201, 193, 180);
+    color: darkolivegreen;
+}
+
+
+
+/*----- Main content---------- */
+.menu {
+    float: left;
+    width: 95%;
+    padding-left: 55px;
+    padding-right: 0px;
+    margin-bottom: 50px;
+}
+
+/* thyme divider */
+.stamp {
+    background-image: url(thyme.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Box effect for each menu  */
+.box {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.box a:visited{
+    text-decoration: none;
+    color: darkolivegreen;
+}
+
+/* Clear floats after main*/
+.main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*menu layout*/
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    font-family: copperplate, fantasy;
+    font-size: 30px;
+}
+caption{
+    font-style: italic;
+    font-family: copperplate;
+}
+
+/*Jump menu Links*/
+.shortcut {
+    float: left;
+    /* puts shortcuts left of left colum*/
+    width: 100%;
+    /*set length of shortcut*/
+    background-color: rgb(201, 193, 180);
+    /*color of backgrnd*/
+    border-radius: 6px;
+    /*smooth edges*/
+    margin-top: 10px;
+    /*space btwn nav & shortcuts*/
+    font-family: copperplate, fantasy;
+    /*font*/
+}
+.shortcut>ul>li {
+    display: inline-block;
+    /* makes links horizontal*/
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.shortcut>ul>li>a {
+    text-decoration: none;
+    /* no line on links*/
+    color: darkolivegreen;
+    /* color of links*/
+    text-align: center;
+    /* centers links*/
+}
+.shortcut>ul>li>a:hover{
+    color:antiquewhite;
+    background-color: darkolivegreen;
+}
+
+/*Footer*/
+.site-footer {
+    background-color: rgb(83, 125, 75);
+    font-family: copperplate;
+    max-block-size: 85px;
+    margin: 10px;
+    /*space on top*/
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+.site-footer ul li {
+    display: inline;
+    /*makes links horizontal*/
+}
+
+.icon-style {
+    max-width: 30px;
+    max-height: 30px;
+    opacity: .6;
+    border-radius: 5px;
+}
+
+.address,
+.social {
+    text-align: center;
+    float: none;
+    margin-top: 1px;
+    padding-top: 10px;
+    display: inline;
+    color: antiquewhite;
+    z-index: 1;
+}
+
+/* Responsive layout - when the screen is less than 800px wide*/
+@media screen and (max-width: 800px) {
+    .menu {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide*/
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}

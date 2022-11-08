@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    background-color: blanchedalmond;
+}
+
+/* Logo*/
+.header {
+    padding: 30px;
+    text-align: center;
+    color: darkolivegreen;
+    border-radius: 4px;
+    background-image: url(bi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.name h1 {
+    font-size: 75px;
+    text-align: center;
+    font-family: copperplate, fantasy;
+    color: rgb(139, 108, 67);
+    background-color: antiquewhite;
+    border: 9px double rgb(83, 125, 75);
+    width: 400px;
+    float: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(83, 125, 75);
+    position: relative;
+    border-radius: 4px;
+    width: 100%;
+
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    margin-left: 30px;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: copperplate, fantasy;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(201, 193, 180);
+    color: darkolivegreen;
+}
+
+/*-----------Bio-------------*/
+
+.bio {
+    height: 60%;
+    width: 50%;
+    border: none;
+    border-radius: 300px;
+    padding: 20px;
+    margin-top: 230px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: none;
+    display: inline-block;
+
+
+}
+
+.quote {
+
+    font-size: x-large;
+    font-family: copperplate, fantasy;
+    color: darkgreen;
+
+}
+
+h1 {
+    font-family: copperplate, fantasy;
+    color: darkolivegreen;
+}
+
+.box {
+    float: left;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    line-height: 2;
+    padding: 25px;
+    margin-top: 80px;
+    margin-right: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    background-color: rgb(248, 239, 239);
+
+}
+
+
+.hgallery {
+    background-color: darkolivegreen;
+    height: 30px;
+    width: 96%;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 30px;
+    padding-right: 10px;
+    border-radius: 20px;
+    float: left;
+    font-family: copperplate, fantasy;
+    clear: both;
+}
+
+.gallery {
+    margin: 10px;
+    padding-left: 55px;
+    float: left;
+    clear: both;
+
+}
+
+.gallery img {
+    border-radius: 25px;
+}
+
+
+
+
+/*Footer*/
+.site-footer {
+    clear: both;
+    background-color: rgb(83, 125, 75);
+    font-family: copperplate;
+    max-block-size: 85px;
+    margin: 10px;
+    /*space on top*/
+    margin-bottom: 0px;
+    /*no space on bottom*/
+    border-radius: 5px;
+}
+
+.site-footer ul li {
+    display: inline;
+    /*makes links horizontal*/
+}
+
+.icon-style {
+    max-width: 30px;
+    max-height: 30px;
+    opacity: .6;
+    border-radius: 5px;
+}
+
+.address,
+.social {
+    text-align: center;
+    float: none;
+    margin-top: 1px;
+    padding-top: 10px;
+    display: inline;
+    color: antiquewhite;
+    z-index: 1;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide*/
+@media screen and (max-width: 800px) {
+    .menu {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
+
+/* Responsive layout - when the screen is less than 400px wide*/
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+
+    .bio {
+        float: left;
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+        display: block;
+    }
+
+
+
+}

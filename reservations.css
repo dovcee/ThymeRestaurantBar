@@ -1,0 +1,190 @@
+/*-----------RESET----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Copperplate,fantasy;
+    padding: 0px;
+    background-color: antiquewhite;
+    color:  rgb(139, 108, 67);
+}
+
+/*----------------Top Banner & Nav---------*/
+/* Logo*/
+.header {
+    padding: 30px;
+    text-align: center;
+    color: darkolivegreen;
+    border-radius: 4px;
+    background-image: url(bi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.name h1 {
+    font-size: 75px;
+    text-align: center;
+    font-family: copperplate, fantasy;
+    color: rgb(139, 108, 67);
+    background-color: antiquewhite;
+    border: 9px double rgb(83, 125, 75);
+    width: 400px;
+    float: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(83, 125, 75);
+    position: relative;
+    border-radius: 4px;
+    width: 100%;
+
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    margin-left: 30px;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: copperplate, fantasy;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(201, 193, 180);
+    color: darkolivegreen;
+}
+
+/*-------------Content------------------*/
+.box {
+    float: left;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    background-color: blanchedalmond;
+}
+/*-----shrimp image----*/
+.img img{
+    height: 570px;
+    width: 500px;
+    float: left;
+    border-radius: 50px;
+    display: block;
+    margin-left: 54px;
+    margin-right: 29px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/*----------Form-------*/
+.box legend {
+
+    font-family: cooperplate,fantasy;
+    text-align: left;
+    font-size: 30px;
+    color: darkslategray;
+}
+.box fieldset{
+    border-radius: 10px ;
+    padding-bottom: 9px;
+    text-align: center;
+}
+input[type=submit] {
+    background-color: darkolivegreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+   
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #689d6b;}
+
+/* Clear floats after the columns */
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+/*---------------Footer--------------------*/
+.site-footer {
+    background-color: rgb(83, 125, 75);
+    font-family: copperplate;
+    max-block-size: 85px;
+    margin: 10px;
+    /*space on top*/
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+.site-footer ul li {
+    display: inline;
+    /*makes links horizontal*/
+}
+
+.icon-style {
+    max-width: 30px;
+    max-height: 30px;
+    opacity: .6;
+    border-radius: 5px;
+}
+
+.address,
+.social {
+    text-align: center;
+    float: none;
+    margin-top: 1px;
+    padding-top: 10px;
+    display: inline;
+    color: antiquewhite;
+    z-index: 1;
+}
+
+/*----------Responsive Layouts----------*/
+/* Responsive layout - when the screen is less than 800px wide*/
+@media screen and (max-width: 800px) {
+    .menu {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/*Screen is less than 600px wide*/
+@media screen and (max-width: 600px) {
+    .box {
+        width: 100%;
+    }
+}
+
+/*Screen is less than 400px wide*/
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
